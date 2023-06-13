@@ -40,6 +40,20 @@ body{
     background: var(--bg);
 }
 
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background:var(--main-colour);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing:2rem;
+}
+
 /* header section starts here  */
 
 .header{
@@ -118,7 +132,7 @@ body{
 
 .header .cart-item-container{
     position: absolute;
-    top: 100%; right: 0;
+    top: 100%; right: -100%;
     height: calc(100vh - 9.5rem);
     width: 35rem;
     background: #fff;
@@ -144,7 +158,106 @@ color: var(--black);
     color: var(--main-colour);
 }
 
+.header .cart-item-container .cart-item img{
+    height: 7rem;
+}
 
+.header .cart-item-container .cart-item .cotent h3{
+    height: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
 
+.header .cart-item-container .cart-item .cotent .price{
+    font-size: 1.5rem;
+    color: var(--main-colour);
+}
 
+.header .cart-item-container .btn{
+    width:100%;
+    text-align: center;
+}
 /* header section ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+     padding:1.5rem 2rem;
+    }
+}
+
+@media (max-width:991px){
+    #menu-btn{
+        display:none;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100; right:0;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh -9.rem);
+    }
+
+    .header .navbar .active{
+        right: 0;
+    }
+    .header .navbar a {
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: 5rem;
+        font-size: 2rem;
+    }
+}
+   
+
