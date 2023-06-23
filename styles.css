@@ -609,7 +609,7 @@ section {
   }
   .header .navbar {
     position: absolute;
-    top: 100;
+    top: 100%;
     right: -100%;
     background: #fff;
     width: 30rem;
